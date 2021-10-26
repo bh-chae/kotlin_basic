@@ -14,8 +14,12 @@ fun main() {
     // val mutli = 3.mulitply(10)
 
     // 중위 표현법
-    val multi = 3 mutliply  10
+    val multi = 3 multiply  10
     println("multi: $multi")
+
+    val num = 3
+    val str = num strPlus "Kotlin" //중위 표현법
+    println(str)
 }
 
 //Int를 확장하여 mutliply() 함수가 하나 더 추가
@@ -23,3 +27,6 @@ infix fun Int.multiply(x: Int): Int{ //infix로 선언되므로 중위 함수
     return this * x
 }
 
+infix fun Int.strPlus(x: String): String{
+    return "$x version $this"
+}

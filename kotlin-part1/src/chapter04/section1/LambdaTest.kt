@@ -8,7 +8,7 @@ fun main() {
 
     // val mutli = { a: Int, b:Int -> a * b} //일반 변수에 람다식 할당
     val multi : (a: Int, b: Int) -> Int = {a, b -> a*b}
-    // 람다식의 선언(a,b)->c = { 람다식의 매개변수 -> 람다식의 처리내용
+    // 람다식의 선언(a,b)->c = { 람다식의 매개변수 -> 람다식의 처리내용}
 
     val multi1 : (a: Int, b: Int) -> Int = {a, b ->
         println("a: $a, b: $b")
